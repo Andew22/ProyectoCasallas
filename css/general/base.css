@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+/* variables globales */
+
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-yellow-oscuro: #D5D52E;
+    --color-naranja-oscuro: #D16B04;
+    --font-normal-m: 1.6rem;
+    --font-mediana-m: 2rem;
+    --font-grande-m: 2.3rem;
+    --font-extragrande-m: 2.5rem;
+}
+/* reset default values */
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* customizable image */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+/* reset rem */
+
+html {
+    /* 1rem = 10px*/
+    font-size: 62.5%;
+}
+body {
+    /* default font-size set back to 16px */
+    font-size: 1.6rem;
+}
+/********************* GENERALES *****************************/
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+/*------------NAV-----------*/
+
+nav {
+    height: 10vh;
+    background: black;
+}
+.navbar_elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.navbar_element {
+    font-family: 'EB Garamond', serif;
+    font-size: var(--font-mediana-m);
+}
+@media (min-width: 1025px) {
+    .navbar_element {
+        font-size: var(--font-grande-m);
+    }
+    .navbar_elements {
+        justify-content: center;
+        column-gap: 10rem;
+    }
+    .navbar_elements {
+        width: 80%;
+        justify-content: right;
+        column-gap: 10rem;
+    }
+}
+/*------------FOOTER-----------*/
+
+.Ifooter {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.Ifooter_copy {
+    text-align: center;
+}
+.Ifooter_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+
+.Ifooter_logo{
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    .Ifooter_container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        justify-content: space-between;
+        padding-bottom: 5rem;
+    }
+}

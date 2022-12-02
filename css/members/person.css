@@ -1,0 +1,211 @@
+/*-------******ESTILOS MOVIL******-----------*/
+
+/*-------BODY-------- */
+
+body {
+    background-color: black;
+}
+/*-------PERSONA MAIN-------- */
+
+.Bmain {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Bmain_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.Bmain_section {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+/* biografy */
+
+.Bmain_biography {
+    text-align: justify;
+    padding: 1.5rem;
+}
+/*carrusel */
+
+.carrusel {
+    position: relative;
+}
+#retroceder {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-left: 1rem;
+}
+#retroceder:hover {
+    cursor: pointer;
+}
+#avanzar {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-right: 1rem;
+}
+#avanzar:hover {
+    cursor: pointer;
+}
+#imagen {
+    width: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: background-image 1s;
+}
+/*seccion de contacto */
+
+.Bmain_contacto {
+    margin: 0 !important;
+}
+.icon_insta {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30px;
+}
+.Bmain_title {
+    padding: 2rem;
+    font-size: 2.3rem;
+}
+/*animaciones */
+
+@keyframes animacionMember {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes animcionTitle {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animacionBiography {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animacionCarrusel {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animacionContacto {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.Bmain_member {
+    animation: animacionMember 1s;
+}
+.Bmain_title{
+    animation: animcionTitle 1.5s;
+}
+
+.Bmain_biography{
+        animation: animacionBiography 2s;
+}
+
+.row3{
+      animation: animacionCarrusel 2.5s;
+}
+
+.Bmain_contacto{
+     animation: animacionContacto 3s;
+}
+
+
+
+
+/*-------******ESTILOS TABLET******-----------*/
+
+@media (min-width: 768px) {
+    .Bmain_container {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 10rem;
+        padding-top: 5rem;
+    }
+}
+/*-------******ESTILOS PC******-----------*/
+
+@media (min-width: 1024px) {
+    .Bmain_container {
+        width: 40%;
+    }
+    #imagen {
+           min-height: 50rem;
+        background-size: contain;
+    }
+
+     .row3{
+        min-height: 50rem;
+    }
+    /*  .Bmain_container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 5rem;
+        grid-row-gap: 2rem;
+    }
+    #imagen {
+        width: 100%;
+        min-height: 35rem;
+
+
+    }
+    .Bmain_title {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .Bmain_member {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .Bmain_biography {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .Bmain_contacto {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .row3 {
+        grid-row: 2/3;
+        height: 100%;
+    }
+
+    .Bmain_member{
+        width: 100%;
+        height: 100%;
+        max-height: 35rem;
+    }*/
+}

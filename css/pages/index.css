@@ -1,0 +1,269 @@
+/*-------******ESTILOS MOVIL******-----------*/
+
+/*------------GENERAL-----------*/
+
+.index_container {
+    height: 100vh;
+}
+/* ELEMENT NAV ACTIVE */
+
+.element1 {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #bc13fe, 0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
+}
+.element2 {
+    text-shadow: none;
+}
+.element3 {
+    text-shadow: none;
+}
+/*------------ MAIN INDEX ----------*/
+
+.Imain {
+    height: 90vh;
+    background-color: var(--color-black);
+}
+.Imain_title {
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Imain_images {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    displa: none;
+}
+@keyframes example10 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.element_block {
+    opacity: 0;
+    text-align: center;
+    background-color: gray;
+    grid-column: 2/5;
+    color: white;
+    animation: example10 3.5s;
+    animation-delay: 1.5s;
+    transition: animation 3.5s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element_block1 {
+    text-align: center;
+    opacity: 0;
+    color: white;
+    background-color: gray;
+    grid-column: 1/4;
+    animation: example10 3.5s;
+    animation-delay: 1.5s;
+    transition: animation 3.5s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes example1 {
+    0% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes example2 {
+    0% {
+        transform: translateX(600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes example3 {
+    0% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes example4 {
+    0% {
+        transform: translateX(600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.elementos1linea {
+    animation-name: example1 !important;
+    animation-duration: 3s;}
+.elementos2linea {
+    animation-name: example2 !important;
+    animation-duration: 3s;
+}
+.elementos3linea {
+    animation-name: example3 !important;
+    animation-duration: 3s;
+}
+.elementos4linea {
+    animation-name: example4 !important;
+    animation-duration: 3s;
+}
+.Imain_image {
+    background-color: #9A9A9A;
+    border: 3px solid var(--color-black);
+}
+/*------------SECTION PROJECT----------*/
+
+.Psection_container {
+    text-align: center;
+    height: 100vh;
+    background-color: var(--color-black);
+}
+.Psection_title {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Psection_text {
+    padding: 2rem;
+    text-align: justify;
+}
+.aux {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+/* STYLES BORDER TEXT*/
+
+.supp_element1 {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    top: 0px;
+    border-top: 3px solid var(--color-white);
+    border-left: 3px solid var(--color-white);
+}
+.supp_element2 {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 0px;
+    bottom: 0px;
+    border-right: 3px solid var(--color-white);
+    border-bottom: 3px solid var(--color-white);
+}
+.supp_element3 {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 0px;
+    top: 0px;
+    border-right: 3px solid var(--color-white);
+    border-top: 3px solid var(--color-white);
+}
+.supp_element4 {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    left: 0px;
+    bottom: 0px;
+    border-left: 3px solid var(--color-white);
+    border-bottom: 3px solid var(--color-white);
+}
+/*-------******RESPONSIVE MOVIL HORIZONTAL******-----------*/
+
+@media (min-width:472px) {
+    .index_container {
+        height: auto;
+    }
+    .Imain_images {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .Imain_title {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+ 
+    .index_container {
+        background-color: red !important;
+    }
+    body {
+        background-color: black;
+    }
+    .Imain {
+        height: auto;
+    }
+}
+/*-------******RESPONSIVE TABLET******-----------*/
+
+/*-------******RESPONSIVE PC******-----------*/
+
+@media (min-width: 1025px) {
+    .Imain_images {
+        width: 70%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 50% 50%;
+        margin: 0 auto;
+    }
+    .navbar_elements {
+        width: 80%;
+        justify-content: right;
+        column-gap: 10rem;
+    }
+    .Imain_title {
+        height: 30%;
+    }
+    .Imain_images {
+        height: 70%;
+    }
+    .element_block {
+        display: none;
+    }
+    .element_block1 {
+        display: none;
+    }
+    .Imain {
+        height: 90vh;
+    }
+    .Imain_title {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    .elementos1linea {
+        animation: none;
+    }
+    .elementos2linea {
+        animation: none;
+    }
+    .elementos3linea {
+        animation: none;
+    }
+    .elementos4linea {
+        animation: none;
+    }
+   
+
+
+
+  
+}
