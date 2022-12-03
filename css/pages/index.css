@@ -299,7 +299,7 @@
 
 
     .Imain_images {
-        width: 70%;
+        width: 60%;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 50% 50%;
         margin: 0 auto;
