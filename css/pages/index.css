@@ -60,7 +60,7 @@
     justify-content: center;
 }
 .Imain_images {
-    height: 80%;
+    height: 60%;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: 25% 25% 25% 25%;
@@ -299,7 +299,7 @@
 
 
     .Imain_images {
-        width: 60%;
+        width: 70%;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 50% 50%;
         margin: 0 auto;
