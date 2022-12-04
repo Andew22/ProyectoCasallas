@@ -272,17 +272,14 @@ body{
   }
 
 
-
 .imagen_n{
     display: inline;
 }
 
 .imagen_b{
-    display: inline;
+    display: none;
 
 }
-
-
 
 
 .linea{
@@ -303,12 +300,15 @@ body{
 }
 
 
-.linea:hover{
+.linea:hover img{
 
     z-index: 1;
+    display:block;
     transform: scale(1.1);
-    transition: transform 2s; 
+    transition: transform 2s display 2s; 
+    
 }
+
 
 
     .Imain_images {
