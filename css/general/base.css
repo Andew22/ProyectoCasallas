@@ -79,6 +79,12 @@ nav {
     background-color: var(--color-black);
     color: var(--color-white);
 }
+.content-text{
+
+
+    font-family: 'EB Garamond', serif;
+}
+
 .Ifooter_copy {
     text-align: center;
 }
